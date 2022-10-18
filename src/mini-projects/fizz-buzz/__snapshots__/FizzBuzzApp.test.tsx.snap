@@ -1,0 +1,5 @@
+// Vitest Snapshot v1
+
+exports[`FizzBuzzApp > should first 1`] = `[Function]`;
+
+exports[`FizzBuzzApp > should render 1`] = `[Function]`;
