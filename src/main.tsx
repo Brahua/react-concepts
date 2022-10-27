@@ -1,5 +1,6 @@
 import React from "react";
-import ReactDOM from "react-dom/client";
+import ReactDOM from "react-dom";
+// import 'antd/dist/antd.css';
 import "./index.css";
 
 import {
@@ -25,6 +26,18 @@ import {
 
 import { FizzBuzzApp } from "./mini-projects"
 
+const colorNames = [
+  "Aquamarine",
+  "BlueViolet",
+  "Chartreuse",
+  "CornflowerBlue",
+  "Thistle",
+  "SpringGreen",
+  "SaddleBrown",
+  "PapayaWhip",
+  "MistyRose",
+];
+
 /**
  * ReactDOM.render() es la forma más común de renderizar JSX.
  * Toma una expresión JSX, crea un árbol correspondiente de nodos DOM y agrega ese árbol al DOM.
@@ -45,9 +58,11 @@ import { FizzBuzzApp } from "./mini-projects"
  * https://medium.com/frontend-canteen/createroot-vs-reactdom-render-a-tiny-mistake-in-react18-official-documentation-d8725d8d3a4c
  */
 
-ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
-  <FunctionalComponent />
-);
+// ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
+//   <PhoneNumberField />
+// );
+
+ReactDOM.render(<ColorPicker colorNames={colorNames}/>, document.getElementById("root"));
 
 /**
  * En resumen, esto es lo que sucede cuando intentas actualizar el DOM en React:
