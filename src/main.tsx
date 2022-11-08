@@ -21,7 +21,8 @@ import {
 import { ClassComponent, FunctionalComponent } from "./topics/components";
 
 import {
-  ColorPicker
+  ColorPicker,
+  QuizNavbar
 } from "./topics/hooks/useState";
 
 import { FizzBuzzApp } from "./mini-projects"
@@ -62,7 +63,7 @@ const colorNames = [
 //   <PhoneNumberField />
 // );
 
-ReactDOM.render(<ColorPicker colorNames={colorNames}/>, document.getElementById("root"));
+ReactDOM.render(<QuizNavbar questions={Array(5)}/>, document.getElementById("root"));
 
 /**
  * En resumen, esto es lo que sucede cuando intentas actualizar el DOM en React:
